@@ -11,3 +11,11 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Apple Of My Eye
+  description:
+    One of these a day keeps the doctor away so be sure to munch up!
+  price: 5.00
+  image_url: apple.png
+   
