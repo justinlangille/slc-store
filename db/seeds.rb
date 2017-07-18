@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.delete_all
+Product.create!(title: 'Easy Peasy Lemon Squeezy',
+description:
+%{<p>When life gives you lemons you know what to do</p>},
+image_url: 'lemon.png',
+price: 5.00)
+# . . .
+Product.create!(title: 'Key Lime',
+description:
+%{<p>Put the lime in the coconut and drink it all up.<p>},
+image_url: 'lime.png',
+price: 5.00)
+# . . .
+Product.create!(title: 'The Cherry on Top',
+description:
+%{<p>Cherry Pie? Oh my!</p>},
+image_url: 'cherry.png',
+price: 5.00)
