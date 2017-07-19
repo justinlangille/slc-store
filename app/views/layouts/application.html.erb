@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SlcStore</title>
+    <title>Fresh Season</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,32 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <body class="<%= controller.controller_name %>"
+
+      <div id="banner">
+        <%= image_tag 'logo.png', alt: 'A Fresh Crop Awaits', :class => "style_image" %>
+        <span class="title"><%=@page_title %></span>
+      </div>
+
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a>
+              <li>
+                <form>
+                  <input type="search" placeholder="search...">
+                  <btn>🔍</btn>
+                </form>
+              </li>
+              <li><a href="http://www....">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div id="main">
+          <%= yield %>
+        </div>
+      </div>
+
   </body>
 </html>

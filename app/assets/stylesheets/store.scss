@@ -1,0 +1,59 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  font-family: Sans-Serif;
+}
+
+h1 {
+  color: #377771;
+  border-bottom: 2px solid #4CE0B3;
+  background: linear-gradient(top, #5CE2B9, white);
+}
+
+span {
+  color: #FF8E72;
+}
+
+.product_listing {
+  display: flex;
+  max-height: 150px;
+  width: 100%;
+  margin: 15px 0 15px 0;
+}
+
+.product_listing h3 {
+  color: #326D67;
+  vertical-align: top;
+}
+
+.product_listing p {
+  color: #377771;
+}
+
+.product_img div {
+  float: left;
+  max-height: 150px;
+}
+
+.product_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: grey;
+}
+
+.product_price {
+  color: #ED6A5E;
+  font-weight: bold;
+}
+
+.product_details {
+  background-color: #B4F1DF;
+  border-radius: 5px;
+  margin-left: 10px;
+  max-height: 150px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+}

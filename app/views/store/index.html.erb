@@ -1,0 +1,28 @@
+<div >
+<h1>
+<span >◉</span> Product Catalog
+</h1>
+</div>
+
+<% cache @products do %>
+<% @products.each do |product| %>
+  <% cache product do %>
+    <div class="product_listing">
+      <div class="product_img">
+        <%= image_tag(product.image_url) %>
+      </div>
+      <div class="product_details">
+        <h3>
+    		<%= product.title %>
+    		</h3>
+        <p>
+          <%= sanitize(product.description) %>
+        </p>
+        <div class="product_price">
+          <%= number_to_currency(product.price) %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+<% end %>
