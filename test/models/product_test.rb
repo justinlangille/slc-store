@@ -51,7 +51,7 @@ class ProductTest < ActiveSupport::TestCase
    end
 
    test "product is not valid without a unique title" do
-     product = Product.new(title: products(:ruby).title,
+     product = Product.new(title: products(:lemon).title,
                            description: "desc",
                            price: 1,
                            image_url: "image.png")

@@ -13,7 +13,7 @@ description:
 image_url: 'lemon.png',
 price: 5.00)
 # . . .
-Product.create!(title: CocoNUTS,
+Product.create!(title: 'CocoNUTS',
 description:
 %{<p>Put the lime in the coconut and drink it all up.<p>},
 image_url: 'coconut.png',

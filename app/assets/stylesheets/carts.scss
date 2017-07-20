@@ -1,0 +1,27 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.carts {
+  .item_price, .total_line {
+    text-align: right;
+  }
+
+  .total_line .total_cell {
+    font-weight: bold;
+    border-top: 1px solid #4CE0B3;
+    color: #377771;
+  }
+}
+
+h2 {
+  color: #377771;
+ border-bottom: 2px solid #4CE0B3;
+}
+
+.buttonTo {
+  border-radius: 5px;
+  border: none;
+  background-color: #B4F1DF;
+  color: #377771;
+  padding: 5px;
+}
