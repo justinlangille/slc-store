@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fresh Season</title>
+    <title>Produce</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,6 +15,7 @@
       <div id="banner">
         <%= image_tag 'logo.png', alt: 'A Fresh Crop Awaits', :class => "style_image" %>
         <span class="title"><%=@page_title %></span>
+
       </div>
 
       <div>
@@ -31,6 +32,16 @@
           </ul>
         </nav>
       </div>
+
+      <div class= "sidebar">
+        <% if @cart %>
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+          <%= render @cart %>
+          <% end %>
+        <% end %>
+      </div>
+
+
         <div id="main">
           <%= yield %>
         </div>

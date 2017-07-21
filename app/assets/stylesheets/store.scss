@@ -3,12 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {
   font-family: Sans-Serif;
+
 }
 
 h1 {
   color: #377771;
   border-bottom: 2px solid #4CE0B3;
   background: linear-gradient(top, #5CE2B9, white);
+  width: 75%;
+  float: right;
 }
 
 span {
@@ -18,8 +21,10 @@ span {
 .product_listing {
   display: flex;
   max-height: 150px;
-  width: 100%;
+  width: 75%;
   margin: 15px 0 15px 0;
+  overflow: hidden;
+  float: right;
 }
 
 .product_listing h3 {

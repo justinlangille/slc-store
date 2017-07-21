@@ -40,3 +40,49 @@
    display: block;
    margin: auto;
  }
+
+ .sidebar {
+	background-color: #4CE0B3;
+  border-radius: 5px;
+	width: 20%;
+	height: 100vh;
+	margin-right: 10px;
+	display: block;
+	float: left;
+}
+
+ #side {
+   padding: 1em 2em;
+   background: #141;
+
+   form, div {
+     display: inline;
+   }
+   input {
+     font-size: small;
+   }
+
+   #cart {
+     font-size: smaller;
+     color: white;
+
+     table {
+       border-top: 2px dotted #B4F1DF;
+       border-bottom: 2px dotted #B4F1DF;
+       margin-bottom: 10px;
+     }
+   }
+
+   ul {
+     padding: 0;
+
+     li {
+       list-style: none;
+
+       a {
+         color: #bfb;
+         font-size: small;
+       }
+     }
+   }
+ }

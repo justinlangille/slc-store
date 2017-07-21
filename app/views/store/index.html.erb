@@ -1,4 +1,4 @@
-<div >
+<div>
 <h1>
 <span >◉</span> Product Catalog
 </h1>
@@ -21,7 +21,8 @@
         <div class="product_price">
           <%= number_to_currency(product.price) %>
         </div>
-        <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+        <%= button_to 'Add to Cart', line_items_path(product_id: product),
+        remote: true %>
       </div>
     </div>
     <% end %>
