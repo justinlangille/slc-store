@@ -86,3 +86,52 @@
      }
    }
  }
+
+ .depot_form {
+
+  * {
+    width: 75%;
+}
+
+ fieldset {
+   background: #B4F1DF;
+   border-style: none;
+   border-radius: 5px;
+
+   legend {
+     color: #dfd;
+     background: #4CE0B3;
+     font-family: sans-serif;;
+     padding: 0.2em 1em;
+     border-radius: 5px;
+   }
+
+   div {
+     margin-bottom: 0.3em;
+   }
+ }
+
+ form {
+   label {
+     width: 5em;
+     float: left;
+     text-align: right;
+     padding-top: 0.2em;
+     margin-right: 0.1em;
+     display: block;
+   }
+
+   select, textarea, input {
+     margin-left: 0.5em;
+   }
+
+   .submit {
+     margin-left: 4em;
+     max-width: 25%;
+   }
+
+   br {
+     display: none;
+   }
+ }
+ }
