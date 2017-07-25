@@ -34,6 +34,7 @@
       </div>
 
       <div class= "sidebar">
+        <p id="notice"><%= notice %></p>
         <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
           <%= render @cart %>

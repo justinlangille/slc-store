@@ -123,3 +123,14 @@ input[type="text"], textarea, select {
   border-radius: 5px;
   background-color: #B4F1DF;
 }
+
+#notice {
+  text-align: center;
+  background-color: #B4F1DF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#notice:empty {
+  display: none;
+}
