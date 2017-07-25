@@ -11,6 +11,8 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
+    post line_items_url, params: { product_id: products(:lemon).id }
+
     get new_order_url
     assert_response :success
   end
@@ -52,11 +54,4 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
     assert_equal flash[:notice], 'Your cart is empty'
   end
 
-  test "should get new" do
-    post line_items_url, params: { product_id: products(:ruby).id }
-
-    get new_order_url
-    assert_response :success
-  end
-  
 end

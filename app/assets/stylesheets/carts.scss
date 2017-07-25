@@ -24,4 +24,18 @@ h2 {
   background-color: #B4F1DF;
   color: #377771;
   padding: 5px;
+  float: right;
+  margin-right: 5px;
+}
+
+.checkout-btn {
+  border-radius: 5px;
+  background-color: #B4F1DF;
+  border: none;
+  padding: 5px;
+  margin-left: 5px;
+  float: left;
+  font-weight: bold;
+  color: #ED6A5E;;
+  font-size: 1em;
 }
