@@ -12,6 +12,25 @@
 //
 //= require jquery
 //= require jquery-ui/effects/effect-blind
+//= require jquery-ui
+//= require jquery-ui/widgets/spinner
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+
+  $( ".cart_icon" ).click(function() {
+  $( ".sidebar" ).toggle("blind", {direction: "left"} );
+});
+
+$(".add").on( "click", function(){
+   $(".sidebar").show( "blind", {direction: "left"} );
+});
+
+});
+
+$(document).ready(function() {
+     $("#spinner").spinner();
+ });

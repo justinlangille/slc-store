@@ -20,6 +20,7 @@
 
       <div>
         <nav>
+          <%= image_tag 'cart.png', :class => "cart_icon" %>
           <ul>
             <li><%= link_to "Home", store_index_path %></li>
               <li>
@@ -33,13 +34,17 @@
         </nav>
       </div>
 
-      <div class= "sidebar">
+      <div class= "sidebar" style="display:none;">
+        <div>
         <p id="notice"><%= notice %></p>
         <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
           <%= render @cart %>
           <% end %>
+        <% else %>
+          <p>Your Basket is empty</p>
         <% end %>
+      </div>
       </div>
 
 
